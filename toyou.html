@@ -1,0 +1,103 @@
+<!DOCTYPE htmlhtml PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html 
+    xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script type="text/javascript">
+        if (document.addEventListener) { // IE >= 9; other browsers
+            document.addEventListener('contextmenu', function(e) {
+                alert("Have a nice day ^^"); //here you draw your own menu
+                e.preventDefault();
+            }, false);
+        } else { // IE < 9
+            document.attachEvent('oncontextmenu', function() {
+                alert("Have a nice day ^^");
+                window.event.returnValue = false;
+            });
+        }
+    </script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--Tittle-->
+    <script language="javascript">
+        var msg = " @ann_th_ng || My love ";
+        var pos = 0;
+        var spacer = " ";
+        var time_length = 100;
+
+        function ScrollTitle() {
+            document.title = msg.substring(pos, msg.length) + spacer + msg.substring(0, pos);
+            pos++;
+            if (pos > msg.length) pos = 0;
+            window.setTimeout("ScrollTitle()", time_length);
+        }
+        ScrollTitle();
+    </script>
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <div class="container">
+        <h1>To @ann_th_ng</h1>
+    </div>
+    <!--Message-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body{
+          color:#ffffff;
+          font :100 px 'Lobster', cursive;
+          font-weight:bold;
+          font-size: 100%;
+          text-align: right;
+          }
+    </style>
+    <style type ="text/css" >
+        .footer{ 
+           position: fixed;     
+           text-align: right;    
+           bottom:200px; 
+           width: 100%;
+           font: 50 px 'Lobster', cursive;
+        }  
+    </style>
+</head>
+    <audio loop autoplay
+           source src="toyou.mp3" type="audio/mpeg">
+    </audio>
+    <body onload="type()">
+       
+        <script language="javascript">
+            cusor = '_';
+            count = 0;
+            mess = 'Khoảng cách tách rời chúng ta, ấy vậy mà anh lại biết em.<br />' + 
+                    'Ấy vậy mà anh lại yêu em, nhiều, rất nhiều.<br />' + 
+                    'Và có vẻ như là, đôi khi em lại không hiểu rõ điều đó. <br />' + 
+                    'Dù có mai này, với tôi em vẫn là cô gái với nụ cười năm ấy. <br />' + 
+                    '======================= <br /> ' + 
+                    'Cô gái năm nào anh theo đuổi ^^<br />'
+
+            function type() {
+                if (cusor == '_') cusor = ' ';
+                else cusor = '_';
+                document.getElementById('scr').innerHTML = mess.substring(0, count++) + cusor;
+                if (count <= mess.length) setTimeout("type()", 100);
+            }
+        </script>
+        <div id="scr"></div>
+        <div class="demo">
+            <div class="demo__help"> Nhấp vào một hình nhé ^^ </div>
+            <div class="demo__gallery"> </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script src="js/index.js"></script>
+        <div class="footer">Và em chưa thử, sao biết lòng mình thôi thiết tha<br>
+                    Gió chẳng thể cuốn bay một nỗi nhớ muốn giữ<br>
+                    Mưa chẳng thể xóa đi một tình yêu trong anh!!!</div>
+    </body>
+
+</html>

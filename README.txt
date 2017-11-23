@@ -1,0 +1,3 @@
+A Pen created at CodePen.io. You can find this one at https://codepen.io/anon/pen/mqLKYq.
+
+ It has 24 1920x1080 pictures inside, so it can take a sec to download. It looks cool though. Feel free to play around with variables (transition times, and delays). You can change the number of pictures. Just change the variables in scss and js. Also, if you want to add new pics, just add the url of the pic in the js array. 

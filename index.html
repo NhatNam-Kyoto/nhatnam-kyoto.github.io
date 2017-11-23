@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+    xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript">
+        if (document.addEventListener) { // IE >= 9; other browsers
+            document.addEventListener('contextmenu', function(e) {
+                alert("Have a nice day ^^"); //here you draw your own menu
+                e.preventDefault();
+            }, false);
+        } else { // IE < 9
+            document.attachEvent('oncontextmenu', function() {
+                alert("Have a nice day ^^");
+                window.event.returnValue = false;
+            });
+        }
+    </script>    
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   	<!--Tittle-->
+    <script language="JavaScript1.1" type="text/javascript">
+    function right(e) {
+        if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+        else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+            alert('Have a nicde day ^^');
+            return false;
+            }
+    return true;
+    }
+    document.onmousedown = right;
+    if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+    window.onmousedown = right;
+    </script>
+    <script language="javascript">
+	    var msg = " @ann_th_ng || My love ";
+	    var pos = 0;
+	    var spacer = " ";
+	    var time_length = 100;
+
+	    function ScrollTitle() {
+	        document.title = msg.substring(pos, msg.length) + spacer + msg.substring(0, pos);
+	        pos++;
+	        if (pos > msg.length) pos = 0;
+	        window.setTimeout("ScrollTitle()", time_length);
+	    }
+	    ScrollTitle();
+	</script>
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+	<audio src="kisstherain.mp3" autoplay loop></audio>
+	<div class="container">
+		<h1>To You</h1>
+		<a href="toyou.html" class="btn" target="_self">Get Started</a>
+	</div>
+</body>
+</html>
